@@ -1,0 +1,26 @@
+{
+  "name": "pinkvisual",
+  "version": "0.0.1",
+  "description": "You innovate. They masturbate. A unnoficial node wrapper for the pinkvisual API: (http://api.pinkvisual.com/home/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RubenCordeiro/node-pinkvisual.git"
+  },
+  "keywords": [
+    "pinkvisual",
+    "porn"
+  ],
+  "author": {
+    "name": "Ruben Fernando Pinto Cordeiro",
+    "email": "ruben.cordeiro.eng@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RubenCordeiro/node-pinkvisual/issues"
+  },
+  "homepage": "https://github.com/RubenCordeiro/node-pinkvisual#readme"
+}
