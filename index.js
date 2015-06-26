@@ -1,3 +1,3 @@
-/**
- * Created by RubenCordeiro on 6/20/2015.
- */
+'use strict';
+
+module.exports = require('./lib/pinkvisual');
