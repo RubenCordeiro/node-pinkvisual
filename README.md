@@ -25,7 +25,7 @@ Fetches a list of all the episodes available.
     
     pv.episodes.all({
         start: 0, // page number (valid number)
-        limit: 10, // number of items to fetch, when combined with “start”, this is the mechanism for pagination.
+        limit: 10, // number of items to fetch, when combined with start, this is the mechanism for pagination.
         sort: name | date | rating | relevance | random, // sorting options (choose one keyword)
         filters: [straight | gay | tranny | male | female] // restrict types of data by using this option
     })
