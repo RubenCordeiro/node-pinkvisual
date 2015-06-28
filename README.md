@@ -63,3 +63,60 @@ Fetches a list of episodes that match a certain search phrase.
     .catch(function(error) {
         console.log("Error:", error);
     });
+
+## .episodes.searchByFirstLetter(letter, [options])
+
+Fetches a list of episodes that begin with a certain letter. This is useful for listings that paginate by initial letter.
+
+    var pv = require('pinkvisual');
+    
+    pv.episodes.searchByFirstLetter('A')
+    .then(function(episodes) {
+        console.log("Episodes:", episodes);
+    })
+    .catch(function(error) {
+        console.log("Error:", error);
+    });
+    
+## .episodes.withNiche(nicheId, [options])
+
+Fetches a list of episodes that are all tagged with a certain niche.
+
+    var pv = require('pinkvisual');
+    
+    pv.episodes.withNiche(2) // nicheId
+    .then(function(episodes) {
+        console.log("Episodes:", episodes);
+    })
+    .catch(function(error) {
+        console.log("Error:", error);
+    });
+    
+## .episodes.withActor(actorId, [options])
+
+Fetches a list of episodes that all include a certain actor.
+
+    var pv = require('pinkvisual');
+    
+    pv.episodes.withActor(3)
+    .then(function(episodes) {
+        console.log("Episodes:", episodes);
+    })
+    .catch(function(error) {
+        console.log("Error:", error);
+    });
+
+## .episodes.paidContent(episodeId, [options])
+
+Fetches links to member videos (paid content) for an episode.
+
+    var pv = require('pinkvisual');
+    
+    pv.episodes.paidContent(3) //episodeId
+    .then(function(paidContent) {
+        console.log("PaidContent:", paidContent);
+    })
+    .catch(function(error) {
+        console.log("Error:", error);
+    });
+    
