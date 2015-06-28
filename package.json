@@ -1,6 +1,6 @@
 {
   "name": "pinkvisual",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A unnoficial node wrapper for the pinkvisual API: (http://api.pinkvisual.com/home/)",
   "main": "index.js",
   "scripts": {
