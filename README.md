@@ -16,7 +16,9 @@ Initialize the module with the API key provided by pinkvisual. Create or access 
     var pv = require('pinkvisual');
     
     pv.init('INSERT YOUR API KEY HERE');
-    
+
+### Episodes
+
 ## .episodes.all([options])
 
 Fetches a list of all the episodes available.
@@ -120,3 +122,32 @@ Fetches links to member videos (paid content) for an episode.
         console.log("Error:", error);
     });
     
+### Niches
+
+## .niches.all([options])
+
+Fetches a list of niches.
+
+    var pv = require('pinkvisual');
+    
+    pv.niches.all()
+    .then(function(niches) {
+        console.log("Niches:", niches);
+    })
+    .catch(function(error) {
+        console.log("Error:", error);
+    });
+    
+## .niches.one(nicheId, [options])
+
+Fetches a niche by id.
+
+    var pv = require('pinkvisual');
+    
+    pv.niches.one(2) //nicheId
+    .then(function(niche) {
+        console.log("Niche:", niche);
+    })
+    .error(function(error) {
+        console.log("Error:", error);
+    });
