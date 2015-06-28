@@ -151,3 +151,61 @@ Fetches a niche by id.
     .error(function(error) {
         console.log("Error:", error);
     });
+
+### Actors
+
+## .actors.all([options])
+
+Fetches a list of actors.
+
+    var pv = require('pinkvisual');
+    
+    pv.actors.all()
+    .then(function(actors) {
+        console.log("Actors:", actors);
+    })
+    .catch(function(error) {
+        console.log("Error:", error);
+    });
+    
+## .actors.one(actorId, [options])
+
+Fetches a single actor based on its id.
+
+    var pv = require('pinkvisual');
+    
+    pv.actors.one(2) // actorId
+    .then(function(function(actor) {
+        console.log("Actor:", actor);
+    })
+    .catch(function(error) {
+        console.log("Error:", error);
+    });
+    
+## .actors.search(term, [options])
+
+Fetches a list of actors that match a search query.
+
+    var pv = require('pinkvisual');
+    
+    pv.actors.search("Sassy Grey")
+    .then(function(actors) {
+        console.log("Actors:", actors);
+    })
+    .catch(function(error) {
+        console.log("Error:", error);
+    });
+    
+## .actors.searchByFirstLetter(letter, [options])
+
+Fetches a list of actors whose names begin with a certain letter. This allows you to create websites paginated by letter.
+
+    var pv = require('pinkvisual');
+    
+    pv.actors.searchByFirstLetter('Z')
+    .then(function(actors) {
+        console.log("Actors:", actors);
+    })
+    .catch(function(error) {
+        console.log("Error:", error);
+    });
