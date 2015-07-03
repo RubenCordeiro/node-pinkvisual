@@ -9,6 +9,19 @@ A unnoficial node wrapper for the pinkvisual API: (http://api.pinkvisual.com/hom
 npm install pinkvisual  
 ```
 
+## Options object
+
+Most of the module functions accept an optional **options** parameter.
+
+This object has the following structure:
+
+    {
+        start: 0, // page number (valid number)
+        limit: 10, // number of items to fetch, when combined with start, this is the mechanism for pagination.
+        sort: 'name' | 'date' | 'rating' | 'relevance' | 'random', // sorting options (only one keyword allowed)
+        filters: ['straight' | 'gay' | 'tranny' | 'male' | 'female'] // restrict types of data by using this option (it may contain more than one keyword)
+    }
+
 # Basic Usage
 
 ## .init(key)
@@ -28,10 +41,10 @@ Fetches a list of all the episodes available.
     var pv = require('pinkvisual');
     
     pv.episodes.all({
-        start: 0, // page number (valid number)
-        limit: 10, // number of items to fetch, when combined with start, this is the mechanism for pagination.
-        sort: name | date | rating | relevance | random, // sorting options (choose one keyword)
-        filters: [straight | gay | tranny | male | female] // restrict types of data by using this option
+        start: 0,
+        limit: 10,
+        sort: 'name',
+        filters: ['straight']
     })
     .then(function(episodes) {
         console.log("All episodes:", episodes);
