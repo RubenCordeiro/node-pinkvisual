@@ -1,8 +1,6 @@
 # node-pinkvisual
 A unnoficial node wrapper for the pinkvisual API: (http://api.pinkvisual.com/home/)
 
-<a href='http://ko-fi.com?i=2504NSRM3E9R0' target='_blank'><img style='border:0px' src='https://az743702.vo.msecnd.net/cdn/btn5.png' border='0' alt='Buy Me A Coffee at Ko-Fi.com' /></a> 
-
 # Install 
 
 ```
@@ -224,3 +222,9 @@ Fetches a list of actors whose names begin with a certain letter. This allows yo
     .catch(function(error) {
         console.log("Error:", error);
     });
+
+# Notes
+
+I hope you find this library useful. If you feel like it, buy me a coffee:
+
+<a href='http://ko-fi.com?i=2504NSRM3E9R0' target='_blank'><img style='border:0px' src='https://az743702.vo.msecnd.net/cdn/btn5.png' border='0' alt='Buy Me A Coffee at Ko-Fi.com' /></a> 
